@@ -88,7 +88,7 @@ const Index = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Header onClickNotification={() => { navigate('/navigation'); }} />
+      <Header onClickNotification={() => { navigate('/notifications'); }} showNotification title="KerjaYuk!" />
       <div className="px-4 py-4 space-y-6">
       <ProfileCard
         greeting="Hi, Good Morning!"
