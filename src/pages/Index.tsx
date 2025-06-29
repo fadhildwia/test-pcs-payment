@@ -1,6 +1,7 @@
 import Activity from "../components/Activity"
 import Header from "../components/Header"
 import NewsCarousel from "../components/NewsCarousel"
+import Online from "../components/Online"
 import ProfileCard from "../components/ProfileCard"
 
 const Index = () => {
@@ -71,6 +72,17 @@ const Index = () => {
       ]
     }
   ];
+
+  const peopleOnline = [
+    { name: 'Jaka', avatar: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { name: 'Zaeun', avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { name: 'Sari', avatar: 'https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { name: 'Aku', avatar: 'https://images.pexels.com/photos/1024311/pexels-photo-1024311.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { name: 'Brian', avatar: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { name: 'Arya', avatar: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { name: 'Raya', avatar: 'https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=150' },
+    { name: 'Nafisa', avatar: 'https://images.pexels.com/photos/3781529/pexels-photo-3781529.jpeg?auto=compress&cs=tinysrgb&w=150' },
+  ];
   
   return (
     <>
@@ -89,6 +101,7 @@ const Index = () => {
           checkOutTime=""
         />
         <NewsCarousel items={newsItems} />
+        <Online items={peopleOnline} />
       </div>
     </>
   )
