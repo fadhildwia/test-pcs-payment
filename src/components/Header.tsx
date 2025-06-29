@@ -38,8 +38,8 @@ const Header: React.FC<HeaderProps> = ({
           <button onClick={onBack} className="mr-4">
             <ArrowLeft className="w-6 h-6 text-gray-600" />
           </button>
-          <h1 className="text-lg font-semibold text-gray-800">
-            {subTitle || "Notification"}
+          <h1 className="text-lg font-bold text-red-500">
+            {subTitle}
           </h1>
         </div>
       )}
